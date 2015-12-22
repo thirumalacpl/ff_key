@@ -2,9 +2,6 @@ $(document).on('pageshow', '#dashboard', function(){
 
 //alert("dashboard");
 
-
-
-
 regionArray_array =  JSON.parse(sessionStorage.getItem("regionArray"));
 //usernamearray =  JSON.parse(sessionStorage.getItem("usernamearray"));
 //alert(regionArray_array.region);
@@ -65,7 +62,7 @@ $("#verified_count").html(verified_count.super_verified_count);
 for(a=0;a<supervisor_not_verified_count_array.length;a++){
   not_verified_count = supervisor_not_verified_count_array[a];
 // alert(not_verified_count.not_verified_count+'new_verification_count');
-$("#not_verified_count").html(not_verified_count.super_verified_count);
+$("#not_verified_count").html(not_verified_count.supervisor_not_verified_count_array);
 
 }
 
@@ -157,6 +154,16 @@ sessionStorage.setItem("identity_verification_array",JSON.stringify(result[17]))
 sessionStorage.setItem("bankruptcy_verification_array",JSON.stringify(result[18]));
 sessionStorage.setItem("professional_details_array",JSON.stringify(result[19]));
 
+sessionStorage.setItem("employmentgap_verification_array",JSON.stringify(result[20]));
+sessionStorage.setItem("delinquent_verification_array",JSON.stringify(result[21]));
+sessionStorage.setItem("servant_verification_array",JSON.stringify(result[22]));
+sessionStorage.setItem("integrity_lifestyle_verification_array",JSON.stringify(result[23]));
+sessionStorage.setItem("edusalary_office_array",JSON.stringify(result[24]));
+sessionStorage.setItem("criminal_verification_array",JSON.stringify(result[25]));
+sessionStorage.setItem("edusalary_education_array",JSON.stringify(result[26]));
+sessionStorage.setItem("integrity_lifestyle_permanent_array",JSON.stringify(result[27]));
+sessionStorage.setItem("servant_education_array",JSON.stringify(result[28]));
+
 // alert(region+'refresh new regionArray_array');
 $.mobile.loading().hide();
 $.mobile.changePage($('#supervisor_inprogress_list'), { transition: "none", changeHash: true, reverse: false });
@@ -215,6 +222,16 @@ sessionStorage.setItem("credential_verification_array",JSON.stringify(result[14]
 sessionStorage.setItem("identity_verification_array",JSON.stringify(result[15]));
 sessionStorage.setItem("bankruptcy_verification_array",JSON.stringify(result[16]));
 sessionStorage.setItem("professional_details_array",JSON.stringify(result[17]));
+
+sessionStorage.setItem("employmentgap_verification_array",JSON.stringify(result[18]));
+sessionStorage.setItem("delinquent_verification_array",JSON.stringify(result[19]));
+sessionStorage.setItem("servant_verification_array",JSON.stringify(result[20]));
+sessionStorage.setItem("integrity_lifestyle_verification_array",JSON.stringify(result[21]));
+sessionStorage.setItem("edusalary_office_array",JSON.stringify(result[22]));
+sessionStorage.setItem("criminal_verification_array",JSON.stringify(result[23]));
+sessionStorage.setItem("edusalary_education_array",JSON.stringify(result[24]));
+sessionStorage.setItem("integrity_lifestyle_permanent_array",JSON.stringify(result[25]));
+sessionStorage.setItem("servant_education_array",JSON.stringify(result[26]));                                          
 
 // alert(region+'refresh new regionArray_array');
 $.mobile.loading().hide();
@@ -275,6 +292,17 @@ sessionStorage.setItem("credential_verification_array",JSON.stringify(result[14]
 sessionStorage.setItem("identity_verification_array",JSON.stringify(result[15]));
 sessionStorage.setItem("bankruptcy_verification_array",JSON.stringify(result[16]));
 sessionStorage.setItem("professional_details_array",JSON.stringify(result[17]));
+
+sessionStorage.setItem("employmentgap_verification_array",JSON.stringify(result[18]));
+sessionStorage.setItem("delinquent_verification_array",JSON.stringify(result[19]));
+sessionStorage.setItem("servant_verification_array",JSON.stringify(result[20]));
+sessionStorage.setItem("integrity_lifestyle_verification_array",JSON.stringify(result[21]));
+sessionStorage.setItem("edusalary_office_array",JSON.stringify(result[22]));
+sessionStorage.setItem("criminal_verification_array",JSON.stringify(result[23]));
+sessionStorage.setItem("edusalary_education_array",JSON.stringify(result[24]));
+sessionStorage.setItem("integrity_lifestyle_permanent_array",JSON.stringify(result[25]));
+sessionStorage.setItem("servant_education_array",JSON.stringify(result[26]));  
+
 // alert(region+'refresh new regionArray_array');
 $.mobile.loading().hide();
 $.mobile.changePage($('#supervisor_list_notveri'), { transition: "none", changeHash: true, reverse: false });
@@ -334,6 +362,17 @@ sessionStorage.setItem("credential_verification_array",JSON.stringify(result[15]
 sessionStorage.setItem("identity_verification_array",JSON.stringify(result[16]));
 sessionStorage.setItem("bankruptcy_verification_array",JSON.stringify(result[17]));
 sessionStorage.setItem("professional_details_array",JSON.stringify(result[18]));
+
+sessionStorage.setItem("employmentgap_verification_array",JSON.stringify(result[19]));
+sessionStorage.setItem("delinquent_verification_array",JSON.stringify(result[20]));
+sessionStorage.setItem("servant_verification_array",JSON.stringify(result[21]));
+sessionStorage.setItem("integrity_lifestyle_verification_array",JSON.stringify(result[22]));
+sessionStorage.setItem("edusalary_office_array",JSON.stringify(result[23]));
+sessionStorage.setItem("criminal_verification_array",JSON.stringify(result[24]));
+sessionStorage.setItem("edusalary_education_array",JSON.stringify(result[25]));
+sessionStorage.setItem("integrity_lifestyle_permanent_array",JSON.stringify(result[26]));
+sessionStorage.setItem("servant_education_array",JSON.stringify(result[27]));  
+
 // alert(region+'refresh new regionArray_array');
 $.mobile.loading().hide();
 $.mobile.changePage($('#supervisor_completed_list'), { transition: "none", changeHash: true, reverse: false });

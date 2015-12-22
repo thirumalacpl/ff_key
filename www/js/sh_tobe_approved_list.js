@@ -99,6 +99,16 @@ identity_verification_array =  JSON.parse(sessionStorage.getItem("identity_verif
 bankruptcy_verification_array =  JSON.parse(sessionStorage.getItem("bankruptcy_verification_array"));
 professional_details_array =  JSON.parse(sessionStorage.getItem("professional_details_array"));
 
+employmentgap_verification_array =  JSON.parse(sessionStorage.getItem("employmentgap_verification_array"));
+delinquent_verification_array =  JSON.parse(sessionStorage.getItem("delinquent_verification_array"));
+servant_verification_array =  JSON.parse(sessionStorage.getItem("servant_verification_array"));
+integrity_lifestyle_verification_array =  JSON.parse(sessionStorage.getItem("integrity_lifestyle_verification_array"));
+edusalary_office_array =  JSON.parse(sessionStorage.getItem("edusalary_office_array"));
+criminal_verification_array =  JSON.parse(sessionStorage.getItem("criminal_verification_array"));
+edusalary_education_array =  JSON.parse(sessionStorage.getItem("edusalary_education_array"));
+integrity_lifestyle_permanent_array =  JSON.parse(sessionStorage.getItem("integrity_lifestyle_permanent_array"));
+servant_education_array =  JSON.parse(sessionStorage.getItem("servant_education_array"));
+
 sh_regionarray =  JSON.parse(sessionStorage.getItem("sh_regionarray"));
 
  //alert(sh_regionarray);
@@ -289,6 +299,88 @@ $('#lis_shs').append(lis);
 
 }
 
+/* 6verifi */
+/* servant  */
+if(qualification_id == '49' || qualification_id == '50' || qualification_id == '51' || qualification_id == '77' || qualification_id == '78' || qualification_id == '79'){
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* servant education qualification 2*/
+if(qualification_id == '80' ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/servant.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* education salary 1*/
+if(qualification_id == '75' ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* education salary 2*/
+if(qualification_id == '76' ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/education-&-salary.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* criminal 1*/
+if(qualification_id == '71' || qualification_id == '72' || qualification_id == '73' || qualification_id == '74' ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/criminal.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* employmnet gap 1 and criminal 2-->74*/
+if(qualification_id == '81' || qualification_id == '82' || qualification_id == '83'  ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/employment-gap.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* delinquent 1*/
+if(qualification_id == '89' || qualification_id == '90' || qualification_id == '91' || qualification_id == '92' || qualification_id == '93'){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/delinquent.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* integrity & lifestyle 1*/
+if(qualification_id == '85' ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.verification_for+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* integrity & life style 2*/
+if(qualification_id == '86' || qualification_id == '87' || qualification_id == '88' ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.Verification_Category+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+/* security*/
+if(qualification_id == '94'  ){
+ 
+var lis='<li class="ui-li-has-thumb ui-first-child li_list"><a href="#" onclick="shtobeapprovedlist('+a+')" class="waves-effect waves-button ui-btn ui-btn-icon-right ui-icon-carat-r  waves-button waves-effect waves-button"><img src="images/mobile/Proffessinoal-icon.png" class="li_imgs_1"><h2 class="li_h2">'+super_obj.First_Name+''+super_obj.Last_Name+'</h2 class="li_h2"><p class="li_p">'+super_obj.Verification_Category+'</p><p class="li_p">'+super_obj.task_name+'</p><p class="li_p">'+super_obj.qualification_name+'</p><span class="li_span">'+date+'</span><b class="li_b_1">'+super_obj.verification_user_id+'</b></a></li>'
+
+$('#lis_shs').append(lis);
+
+}
+
+
 }
 
 
@@ -446,12 +538,200 @@ for(a=0;a<coordinator_final_comment_array.length;a++){
 }
 }
 
+if(qualification_id == '63' ){
+//alert('function assest id 16 to 26');
+
+for(a=0;a<assests_verification_array.length;a++){
+  assest_ver = assests_verification_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =assest_ver.user_id;
+  huemploy=assest_ver.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  assest_inproa = assests_verification_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+
+}
+
+/*servant education 80 75*/
+if(qualification_id == '80' ){
+  //alert('80 ');
+ for(a=0;a<servant_education_array.length;a++){
+servant_educ = servant_education_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =servant_educ.user_id;
+  huemploy=servant_educ.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  servant_educa = servant_education_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+  }
+
+/*edusalary_office 75*/
+if(qualification_id == '85' ){
+  //alert('85 ');
+  //alert(integrity_lifestyle_permanent_array);
+ for(a=0;a<integrity_lifestyle_permanent_array.length;a++){
+integrity_perma = integrity_lifestyle_permanent_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =integrity_perma.user_id;
+  huemploy=integrity_perma.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  integrity_permaa = integrity_lifestyle_permanent_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+
+  }
+
+/*edusalary_office 75*/
+if(qualification_id == '76' ){
+  //alert('76 ');
+ for(a=0;a<edusalary_education_array.length;a++){
+edusalary_edu = edusalary_education_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =edusalary_edu.user_id;
+  huemploy=edusalary_edu.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  edusalary_edua = edusalary_education_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+}
+
+/*edusalary_office 75*/
+if(qualification_id == '75' ){
+  //alert('75 ');
+ for(a=0;a<edusalary_office_array.length;a++){
+edusalary_off = edusalary_office_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =edusalary_off.user_id;
+  huemploy=edusalary_off.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  edusalary_offa = edusalary_office_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+
+  }
+
+if(qualification_id == '89' || qualification_id == '90' || qualification_id == '91' || qualification_id == '92' || qualification_id == '93' ){
+ for(a=0;a<delinquent_verification_array.length;a++){
+delinquent_veri = delinquent_verification_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =delinquent_veri.user_id;
+  huemploy=delinquent_veri.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  delinquent_veria = delinquent_verification_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+}
+
+
+if(qualification_id == '86' || qualification_id == '87' || qualification_id == '88' ){
+ for(a=0;a<integrity_lifestyle_verification_array.length;a++){
+integrity_lifestyle = integrity_lifestyle_verification_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =integrity_lifestyle.user_id;
+  huemploy=integrity_lifestyle.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  integrity_lifestylea = integrity_lifestyle_verification_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+}
+
+if(qualification_id == '81' || qualification_id == '82' || qualification_id == '83'  ){
+ for(a=0;a<employmentgap_verification_array.length;a++){
+  employgap_veri = employmentgap_verification_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =employgap_veri.user_id;
+  huemploy=employgap_veri.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  employgap_veria = employmentgap_verification_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+}
+
+if(qualification_id == '71' || qualification_id == '72' || qualification_id == '73' || qualification_id == '74' ){
+ for(a=0;a<criminal_verification_array.length;a++){
+  criminal_veri = criminal_verification_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =criminal_veri.user_id;
+  huemploy=criminal_veri.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  criminal_veria = criminal_verification_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+ }
+
+if(qualification_id == '49' || qualification_id == '50' || qualification_id == '51' || qualification_id == '77' || qualification_id == '78' || qualification_id == '79'){
+
+for(a=0;a<servant_verification_array.length;a++){
+  servant_veri = servant_verification_array[a];
+
+  super_obj = tobe_approved_sh[index];
+  hj =servant_veri.user_id;
+  huemploy=servant_veri.address_group;
+//alert(h+'hh');
+gj =super_obj.verification_user_id;
+//alert(hj+'gg'+gj+''+huemploy+'qualification_id'+qualification_id);
+if( hj == gj && huemploy == qualification_id){
+  servant_veria = servant_verification_array[a];
+//alert(employment_obja_inpod.user_id+'employment_records_array'+gj);
+}
+}
+
+}
+
+
 if(qualification_id == '29'  || qualification_id == '31'){
 //alert('function address id 29 to 31');
 for(a=0;a<address_verification_array.length;a++){
   address_verii = address_verification_array[a];
 
-  super_inpro_obj = tobe_approved_sh[index];
+  super_obj = tobe_approved_sh[index];
   hj =address_verii.user_id;
   huemploy=address_verii.address_group;
 //alert(h+'hh');
@@ -471,7 +751,7 @@ if(qualification_id == '32' || qualification_id == '33' || qualification_id == '
 for(a=0;a<reference_verification_array.length;a++){
   reference = reference_verification_array[a];
 
-  super_inpro_obj = tobe_approved_sh[index];
+  super_obj = tobe_approved_sh[index];
   hj =reference.user_id;
   huemploy=reference.address_group;
 //alert(h+'hh');
@@ -490,11 +770,11 @@ if(qualification_id == '64' ){
 for(a=0;a<bankguarantee_verification_array.length;a++){
   bank_guar = bankguarantee_verification_array[a];
 
-  super_inpro_obj = tobe_approved_sh[index];
+  super_obj = tobe_approved_sh[index];
   hj =bank_guar.user_id;
   huemploy=bank_guar.address_group;
 //alert(h+'hh');
-gj =super_inpro_obj.verification_user_id;
+gj =super_obj.verification_user_id;
 //alert(hj+'hj'+gj+'gg'+huemploy+'qualification_id'+qualification_id);
 if( hj == gj && huemploy == qualification_id){
   bank_inproa = bankguarantee_verification_array[a];
@@ -509,7 +789,7 @@ if(qualification_id == '16' || qualification_id == '17' || qualification_id == '
 for(a=0;a<assests_verification_array.length;a++){
   assest_ver = assests_verification_array[a];
 
-  super_inpro_obj = tobe_approved_sh[index];
+  super_obj = tobe_approved_sh[index];
   hj =assest_ver.user_id;
   huemploy=assest_ver.propert_type;
 //alert(h+'hh');
@@ -618,7 +898,7 @@ if( hj == gj && huemploy == qualification_id){
 
 }
 
-if(qualification_id == '42' || qualification_id == '46' || qualification_id == '44' || qualification_id == '48' || qualification_id == '30' || qualification_id == '40'){
+if(qualification_id == '42' || qualification_id == '46' || qualification_id == '44' || qualification_id == '48' || qualification_id == '30' || qualification_id == '40' || qualification_id == '70' || qualification_id == '84' || qualification_id == '94'){
 //alert('function distributor residential id 40');
 for(a=0;a<verification_master_array.length;a++){
   common_address = verification_master_array[a];
@@ -729,6 +1009,15 @@ if( hj == gj && huemploy == qualification_id){
 }
 }
 
+var integrity_permaa=integrity_permaa;
+var delinquent_veria=delinquent_veria;
+var integrity_lifestylea=integrity_lifestylea;
+var employgap_veria=employgap_veria;
+var criminal_veria=criminal_veria;
+var servant_veria=servant_veria;
+var servant_educa=servant_educa;
+var edusalary_edua=edusalary_edua;
+var edusalary_offa=edusalary_offa;  
 
 var bankruptcy_deta=bankruptcy_deta;
 var identity_deta=identity_deta;
@@ -890,6 +1179,26 @@ $.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeH
 return false;
 }
 }
+
+if(qualification_id == '63' ){
+     if(assest_inproa !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+
+sessionStorage.setItem("assest_inpro",JSON.stringify(assest_inproa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+//alert('currentob assest succes');
+sessionStorage.setItem("assest_inpro",JSON.stringify(assest_inproa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
 /*if(qualification_id == '40' ){
 if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
 
@@ -978,7 +1287,7 @@ return false;
 }
 }
 
-if(qualification_id == '42' || qualification_id == '46' || qualification_id == '44' || qualification_id == '48' || qualification_id == '30' || qualification_id == '40'){
+if(qualification_id == '42' || qualification_id == '46' || qualification_id == '44' || qualification_id == '48' || qualification_id == '30' || qualification_id == '40' || qualification_id == '70' || qualification_id == '84' || qualification_id == '94'){
 if(common_addressa !== undefined){ 
 if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
 
@@ -1098,6 +1407,164 @@ $.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeH
 return false;
 }
 sessionStorage.setItem("bank_inproa",JSON.stringify(bank_inproa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+
+if(qualification_id == '49' || qualification_id == '50' || qualification_id == '51' || qualification_id == '77' || qualification_id == '78' || qualification_id == '79'){
+  if(servant_veria !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("servant_veria",JSON.stringify(servant_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("servant_veria",JSON.stringify(servant_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+
+if(qualification_id == '71' || qualification_id == '72' || qualification_id == '73' || qualification_id == '74' ){
+  if(criminal_veria !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("criminal_veria",JSON.stringify(criminal_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("criminal_veria",JSON.stringify(criminal_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+
+if(qualification_id == '81' || qualification_id == '82' || qualification_id == '83'  ){
+  if(employgap_veria !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("employgap_veria",JSON.stringify(employgap_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("employgap_veria",JSON.stringify(employgap_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+if(qualification_id == '86' || qualification_id == '87' || qualification_id == '88' ){
+  if(integrity_lifestylea !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("integrity_lifestylea",JSON.stringify(integrity_lifestylea));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("integrity_lifestylea",JSON.stringify(integrity_lifestylea));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+if(qualification_id == '89' || qualification_id == '90' || qualification_id == '91' || qualification_id == '92' || qualification_id == '93' ){
+  if(delinquent_veria !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("delinquent_veria",JSON.stringify(delinquent_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("delinquent_veria",JSON.stringify(delinquent_veria));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+
+if(qualification_id == '75' ){
+  if(edusalary_offa !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("edusalary_offa",JSON.stringify(edusalary_offa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("edusalary_offa",JSON.stringify(edusalary_offa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+if(qualification_id == '76' ){
+  if(edusalary_edua !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("edusalary_edua",JSON.stringify(edusalary_edua));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("edusalary_edua",JSON.stringify(edusalary_edua));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+if(qualification_id == '85' ){
+  if(integrity_permaa !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("integrity_permaa",JSON.stringify(integrity_permaa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("integrity_permaa",JSON.stringify(integrity_permaa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+}
+
+if(qualification_id == '80' ){
+  if(servant_educa !== undefined){ 
+if(supervisor_final_commanda !== undefined && coordinator_final_commanda !== undefined){
+
+sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
+sessionStorage.setItem("coordinator_final_commanda",JSON.stringify(coordinator_final_commanda));
+sessionStorage.setItem("servant_educa",JSON.stringify(servant_educa));
+sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
+$.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
+return false;
+}
+sessionStorage.setItem("servant_educa",JSON.stringify(servant_educa));
 sessionStorage.setItem("currentobj",JSON.stringify(super_obj));
 $.mobile.changePage($('#sh_tobe_approved_inside'), { transition: "none", changeHash: true, reverse: false });
 return false;
