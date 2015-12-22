@@ -94,7 +94,7 @@ $(document).off('click', '#inprogress_sh').on('click', '#inprogress_sh', functio
 
 //alert(region+'region inprogress_sh');
 
-$.ajax({url: "http://staging.eimpressive.com/slim-cor/dash_sh_inprogress.php?region="+region,
+$.ajax({url: "http://thewatchguard.com/slim-cor/dash_sh_inprogress.php?region="+region,
     data:$('#e').serialize(),
     type: 'post',                   
     async: 'true',
@@ -135,7 +135,7 @@ $.ajax({url: "http://staging.eimpressive.com/slim-cor/dash_sh_inprogress.php?reg
 //alert('tobeapproved');
 //alert(region+'region tobeapproved');
 
-$.ajax({url: "http://staging.eimpressive.com/slim-cor/dash_tobeapproved_sh.php?region="+region,
+$.ajax({url: "http://thewatchguard.com/slim-cor/dash_tobeapproved_sh.php?region="+region,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',
@@ -177,7 +177,7 @@ $.ajax({url: "http://staging.eimpressive.com/slim-cor/dash_tobeapproved_sh.php?r
 //alert('completed');
 //alert(region+'region completed_sh');
 
-$.ajax({url: "http://staging.eimpressive.com/slim-cor/dash_completed_sh.php?region="+region,
+$.ajax({url: "http://thewatchguard.com/slim-cor/dash_completed_sh.php?region="+region,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',
@@ -219,7 +219,7 @@ $.ajax({url: "http://staging.eimpressive.com/slim-cor/dash_completed_sh.php?regi
 //alert('waiting');
 //alert(region+'region waiting_sh');
 
-$.ajax({url: "http://staging.eimpressive.com/slim-cor/dash_waiting_sh.php?region="+region,
+$.ajax({url: "http://thewatchguard.com/slim-cor/dash_waiting_sh.php?region="+region,
     data:$('#ee').serialize(),
     type: 'post',                   
     async: 'true',

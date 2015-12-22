@@ -27,7 +27,7 @@ $(document).off('click', '#co_new_verification').on('click', '#co_new_verificati
    alert(user_id+'user id refresh');
 alert(region+'region refresh');
 
-$.ajax({url: "http://staging.eimpressive.com/slim-cor/co_dashnewveri.php?userid="+user_id+"&regionsection="+regionsection,
+$.ajax({url: "http://thewatchguard.com/slim-cor/co_dashnewveri.php?userid="+user_id+"&regionsection="+regionsection,
     data:$('#update_to_inprogress').serialize(),
     type: 'post',                   
     async: 'true',

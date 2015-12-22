@@ -184,7 +184,7 @@ log_inpro_objg = activity_log_details_array[a];
  }
 
 
-$.ajax({url: "http://staging.eimpressive.com/slimrestapi-watch/record_inside.php?user_ida="+user_ida+"&qualification_id="+qualification_id,
+$.ajax({url: "http://thewatchguard.com/slimrestapi-watch/record_inside.php?user_ida="+user_ida+"&qualification_id="+qualification_id,
     data:$('#update_to_verified_inproo').serialize(),
     type: 'post',                   
     async: 'true',

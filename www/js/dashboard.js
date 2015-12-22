@@ -77,7 +77,7 @@ $("#completed_count").html(not_verified_counta.completed_count);
 
 $(document).off('click', '#new_verification').on('click', '#new_verification', function() {
 //alert(region+'refresh');
-$.ajax({url: 'http://staging.eimpressive.com/slim-cor/dashnewveri.php?region='+region,
+$.ajax({url: 'http://thewatchguard.com/slim-cor/dashnewveri.php?region='+region,
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -116,7 +116,7 @@ alert('Network error has occurred please try again!');
 
 $(document).off('click', '#inprogress').on('click', '#inprogress', function() {
 //alert(region+'inprogress');
-$.ajax({url: 'http://staging.eimpressive.com/slim-cor/dashinprogress.php?region='+region,
+$.ajax({url: 'http://thewatchguard.com/slim-cor/dashinprogress.php?region='+region,
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -187,7 +187,7 @@ alert('Network error has occurred please try again!');
 
 $(document).off('click', '#verified').on('click', '#verified', function() {
 //alert(region+'verified');
-$.ajax({url: 'http://staging.eimpressive.com/slim-cor/dashverified.php?region='+region,
+$.ajax({url: 'http://thewatchguard.com/slim-cor/dashverified.php?region='+region,
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -257,7 +257,7 @@ alert('Network error has occurred please try again!');
 
 $(document).off('click', '#not_verified').on('click', '#not_verified', function() {
 //alert(region+'verified');
-$.ajax({url: 'http://staging.eimpressive.com/slim-cor/dash_not_verified.php?region='+region,
+$.ajax({url: 'http://thewatchguard.com/slim-cor/dash_not_verified.php?region='+region,
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -326,7 +326,7 @@ alert('Network error has occurred please try again!');
 
 $(document).off('click', '#completed').on('click', '#completed', function() {
 //alert(region+'verified');
-$.ajax({url: 'http://staging.eimpressive.com/slim-cor/completed.php?region='+region,
+$.ajax({url: 'http://thewatchguard.com/slim-cor/completed.php?region='+region,
   data:$('#newt').serialize(),
   type: 'post',                   
   async: 'true',

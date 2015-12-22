@@ -28,7 +28,7 @@ if(sessionStorage.getItem("logged_in")=="2"){
 $(document).off('click', '#submit').on('click', '#submit', function() { 
     if($('#username').val().length > 0 && $('#password').val().length > 0){
         console.log($('#check-watchuser').serialize());
-        $.ajax({url: 'http://staging.eimpressive.com/slim-cor/index.php',
+        $.ajax({url: 'http://thewatchguard.com/slim-cor/index.php',
             data:$('#check-watchuser').serialize(),
             type: 'post',                   
             async: 'true',

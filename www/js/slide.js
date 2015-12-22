@@ -173,7 +173,7 @@ var oneemp=employimg_obj.document;
 
  
     
-    $('.document_imag_inpro').append('<img class="profile-thumbnail" src="http://staging.eimpressive.com/uploads/'+oneemp+'" style="width:150px;height:150px">&nbsp;');
+    $('.document_imag_inpro').append('<img class="profile-thumbnail" src="http://thewatchguard.com/uploads/'+oneemp+'" style="width:150px;height:150px">&nbsp;');
 
 
       $('#pincode_inpro').text(currentobj_employment_records.employer_zipcode);
@@ -253,7 +253,7 @@ var oneproof=addressimg_obj.document_name;
     $('#location_inpro').text(user_obja.city_name);
     // $('#year').text(currentobj_educational_records.year_of_passing);
     
-    $('.document_imag_inpro').append('<img class="profile-thumbnail" src="http://staging.eimpressive.com/documents/addressid/'+oneproof+'" style="width:150px;height:150px">&nbsp');
+    $('.document_imag_inpro').append('<img class="profile-thumbnail" src="http://thewatchguard.com/documents/addressid/'+oneproof+'" style="width:150px;height:150px">&nbsp');
 
 
       //$('#pincode_inpro').text(currentobj_educational_records.pincode);
@@ -281,7 +281,7 @@ $(document).off('click', '#inpro_to_verified').on('click', '#inpro_to_verified',
  //alert(coordinator_id);
  //alert(activity_log);
 
-$.ajax({url: "http://staging.eimpressive.com/slim-cor/supervisor_status_to_verified.php?status_val_inpro="+status_val_inpro+"&verification_user_id="+verification_user_id+"&remark_inpro="+remark_inpro+"&coordinator_id="+coordinator_id+"&region_num="+region_num+"&activity_log="+activity_log+"&sdocument="+sdocument,
+$.ajax({url: "http://thewatchguard.com/slim-cor/supervisor_status_to_verified.php?status_val_inpro="+status_val_inpro+"&verification_user_id="+verification_user_id+"&remark_inpro="+remark_inpro+"&coordinator_id="+coordinator_id+"&region_num="+region_num+"&activity_log="+activity_log+"&sdocument="+sdocument,
     data:$('#update_to_verified_inpro').serialize(),
     type: 'post',                   
     async: 'true',
